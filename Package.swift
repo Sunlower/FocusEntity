@@ -5,7 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "FocusEntity",
-    platforms: [.iOS(.v13), .macOS(.v10_15)],
+    platforms: [
+        .macCatalyst(.v15),
+        .iOS(.v15),
+        .macOS(.v11)
+    ],
     products: [
         .library(name: "FocusEntity", targets: ["FocusEntity"])
     ],
